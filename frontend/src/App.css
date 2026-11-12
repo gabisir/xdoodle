@@ -17,6 +17,64 @@
   }
 }
 
+.anketa-link,
+.back-link {
+  color: var(--text-h);
+  border-radius: 6px;
+  background: var(--accent-bg);
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: box-shadow 0.3s;
+
+  &:hover {
+    box-shadow: var(--shadow);
+  }
+}
+
+.anketa-page {
+  width: min(100% - 40px, 560px);
+  margin: 0 auto;
+  padding: 32px 0;
+  text-align: left;
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 32px;
+}
+
+.anketa-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.anketa-form input {
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  color: var(--text-h);
+  background: var(--bg);
+  font: inherit;
+  padding: 10px 12px;
+}
+
+.anketa-form input:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.anketa-submit {
+  align-self: flex-start;
+  border: 0;
+  border-radius: 6px;
+  color: var(--text-h);
+  background: var(--accent-bg);
+  cursor: pointer;
+  font: inherit;
+  margin-top: 12px;
+  padding: 10px 16px;
+}
+
 .hero {
   position: relative;
 
