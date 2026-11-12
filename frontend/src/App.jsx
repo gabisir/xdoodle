@@ -3,9 +3,14 @@ import heroImg from './assets/hero.png'
 import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import './App.css'
+import Anketa from './Anketa.jsx'
 
 function App() {
   const [count, setCount] = useState(0)
+
+  if (window.location.pathname === '/anketa') {
+    return <Anketa />
+  }
 
   return (
     <>
@@ -28,6 +33,10 @@ function App() {
         >
           Count is {count}
         </button>
+        
+        <a className="anketa-link" href="/anketa">
+          Kreiraj anketu
+        </a>
       </section>
 
       <div className="ticks"></div>
