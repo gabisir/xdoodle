@@ -25,11 +25,13 @@
   padding: 8px 16px;
   text-decoration: none;
   transition: box-shadow 0.3s;
-
+  font-size: 25px;
+  
   &:hover {
     box-shadow: var(--shadow);
   }
 }
+
 
 .anketa-page {
   width: min(100% - 40px, 560px);
@@ -239,4 +241,40 @@
     right: 0;
     border-right-color: var(--border);
   }
+}
+
+.centerdiv{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+}
+
+.no-bullets{
+  list-style-type:none;
+}
+.moja-anketa-info{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.moja-anketa-info h2{
+  margin: 10px;
+}
+
+.moja-anketa-li{
+  display: flex;
+  border: 1px rgb(205, 205, 205) solid;
+  border-radius: 5px;
+}
+.moja-anketa-page {
+  width: min(100% - 40px, 600px);
+  margin: 0 auto;
+  padding: 32px 0;
+  text-align: left;
+}
+
+.moja-anketa-desno{
+  color: rgb(140, 157, 157);
+  
 }
