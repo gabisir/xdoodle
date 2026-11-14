@@ -1,6 +1,9 @@
 import './App.css'
+import { useState } from 'react'
 
 function Anketa() {
+  const [datum, setDatum] = useState('')
+
   return (
     <main className="anketa-page">
       <a className="back-link" href="/">
@@ -30,7 +33,18 @@ function Anketa() {
           placeholder="dodatan opis"
         />
 
-      <div>DIV ZA KALENDAR</div>
+        <div>DIV ZA KALENDAR</div>
+
+        <label htmlFor="anketa-datum">Odaberi datum</label>
+        <input
+          id="anketa-datum"
+          name="datum"
+          type="date"
+          value={datum}
+          onChange={(event) => setDatum(event.target.value)}
+        />
+
+      
       <div>DIV ZA DODATNE OPCIJE ANKETE</div>
       
         <button type="submit" className="anketa-submit">
